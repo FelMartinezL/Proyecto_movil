@@ -7,3 +7,7 @@ ion-menu::part(backdrop) {
   
     box-shadow: 4px 0px 16px rgba(203, 181, 203, 0.18);
   }
+  ion-title {
+    text-align: center;
+    width: 100%; /* Ocupar todo el ancho disponible */
+  }
