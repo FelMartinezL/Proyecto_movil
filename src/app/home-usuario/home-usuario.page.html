@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>homeUsuario</ion-title>
+    <ion-title>TellevoApp</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,11 +14,11 @@
       </ion-header>
       <ion-content class="ion-padding">
         <ion-list>
-          <ion-button (click)="navegarA('/Home')">Home</ion-button>
+          <ion-button (click)="navegarA('/Home')" class="link-button">Home</ion-button>
           <br>
-          <ion-button (click)="navegarA('/login')">Configuración</ion-button>
+          <ion-button (click)="navegarA('/login')" class="link-button">Configuración</ion-button>
           <br>
-          <ion-button (click)="navegarA('/home-usuario')">Cuenta</ion-button>
+          <ion-button (click)="navegarA('/home-usuario')" class="link-button">Cuenta</ion-button>
         </ion-list>
       </ion-content>
     </ion-menu>
@@ -32,7 +32,26 @@
           <ion-title>Home</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+      <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu.
+        <ion-card>
+          <ion-card-header>
+            usuario
+          </ion-card-header>
+          <ion-card-content>
+            
+            <!-- Agrega otros campos según tus datos de usuario -->
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
     </div>
   </ion-app>
 </ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot ="end">
+    <ion-button [routerLink]="['/login'] " >Cerrar sesion</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-footer>
+
