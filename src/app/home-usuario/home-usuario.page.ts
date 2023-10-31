@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { ViajeService } from '../services/viaje_service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,6 +23,8 @@ export class HomeUsuarioPage implements OnInit {
   
 
   constructor(private router: Router) { } 
+
+
 
   ngOnInit() {  
     const usuarioStorage = localStorage.getItem('usuario');
@@ -53,4 +57,12 @@ export class HomeUsuarioPage implements OnInit {
 
     this.router.navigate(['/login']);
   }
-  }
+}
+export class ViajePage {
+  constructor(private NavCtrl: NavController,private viajeService: ViajeService){}
+  this.viajeService.IniciarViaje();
+  
+
+
+}
+  
